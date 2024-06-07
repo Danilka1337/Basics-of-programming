@@ -34,6 +34,19 @@ void findSaddlePoints(int matrix[ROWS][COLS], int rows, int cols) {
     }
 }
 
+int main() {
+    int matrix[ROWS][COLS] = {
+        {3, 8, 4, 1},
+        {9, 7, 2, 5},
+        {6, 1, 3, 4},
+        {2, 5, 7, 8}
+    };
+    
+    findSaddlePoints(matrix, ROWS, COLS);
+    
+    return 0;
+}
+
 
 
             
