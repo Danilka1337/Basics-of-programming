@@ -18,4 +18,22 @@ void findSaddlePoints(int matrix[ROWS][COLS], int rows, int cols) {
                     break;
                 }
             }
+
+            // Проверка на максимальность в столбце
+            for (int k = 0; k < rows; k++) {
+                if (matrix[k][j] > current) {
+                    isMaxInCol = 0;
+                    break;
+                }
+            }
+            
+            if (isMinInRow && isMaxInCol) {
+                printf("Седловая точка найдена в строке %d и столбце %d со значением %d\n", i, j, current);
+            }
+        }
+    }
+}
+
+
+
             
